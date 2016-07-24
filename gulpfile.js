@@ -43,9 +43,6 @@ gulp.task('scripts', function(){
 //For get-min-styles
 gulp.task('getminstyles', function(){
     gulp.src('bower_components/**/*.min.css')
-        // .pipe(order([
-        //     "angular-material.min.css"
-        // ]))
         .pipe(concat('lib.css'))
         .pipe(gulp.dest('src/css/'))
         // .pipe(browserSync.stream())
@@ -53,7 +50,6 @@ gulp.task('getminstyles', function(){
 });
 //For min-styles
 gulp.task('minstyles', function(){
-    // gulp.src('bower_components/**/*.css')
     gulp.src('src/js/lib/*.min.css')
         .pipe(order([
             "angular-material.min.css"
@@ -74,11 +70,19 @@ gulp.task('styles', function(){
         .pipe(gulp.dest('src/css/'));
 });
 
+//For Build
+gulp.task('build', function(){
+    gulp.src(['src/js/lib.js','src/js/main.min.js','src/css/lib.css','src/css/style.css','src/font/**/*.{ttf,woff,eof,svg}','src/images/*.{png,jpg,jpeg,gif}'])
+        .pipe(gulp.dest('build/'));
+});
+
 //For Watch Task
 gulp.task('watch', function(){
     gulp.watch('src/scss/**/*.scss',['styles']);
     gulp.watch('src/js/**/*.js',['scripts']);
+    // gulp.watch('src/*',['build']);
+
 });
 
 //For Default Task
-gulp.task('default', ['getminscripts','getminstyles','minstyles','minscripts','styles','scripts','watch']);
+gulp.task('default', ['getminscripts','getminstyles','minstyles','minscripts','styles','scripts','build','watch']);
