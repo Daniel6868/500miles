@@ -6,6 +6,7 @@ var gulp    = require('gulp'),
     uglify  = require('gulp-uglify'),
     sass    = require('gulp-sass'),
     rename  = require('gulp-rename'),
+    notify  = require('gulp-notify'),
     sourcemaps   =  require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     watch   = require('gulp-watch')
@@ -69,6 +70,8 @@ gulp.task('styles', function(){
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('src/css/'));
 });
+
+// --------------------------------------------------------------------
 
 //For Build
 gulp.task('build', function(){

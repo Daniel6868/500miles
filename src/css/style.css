@@ -3,6 +3,9 @@
   padding: 0px; }
 
 .wrapper {
-  border: 1px solid red; }
+  border: 1px solid red;
+  font-family: "lato"; }
+  .wrapper .footer {
+    background-color: #0C1400; }
 
 /*# sourceMappingURL=style.css.map */
