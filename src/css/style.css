@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.wrapper {
+  font-family: "lato", "sans-serif", "tahoma"; }
+  .wrapper .header {
+    color: #fff; }
+    .wrapper .header .navbar {
+      background-color: transparent;
+      border-color: transparent;
+      position: absolute;
+      color: #fff;
+      z-index: 10000; }
+      .wrapper .header .navbar .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+        position: absolute; }
+      .wrapper .header .navbar a {
+        color: #fff; }
+        .wrapper .header .navbar a:hover {
+          color: #fff;
+          text-decoration: underline; }
+        .wrapper .header .navbar a img {
+          text-decoration: none; }
+  .wrapper .topBanner {
+    background-color: green; }
+    .wrapper .topBanner .slideshow .wrapper {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 500px; }
+      .wrapper .topBanner .slideshow .wrapper .slides .slide figure {
+        height: 500px; }
+        .wrapper .topBanner .slideshow .wrapper .slides .slide figure img {
+          height: 500px;
+          width: 100%; }
+        .wrapper .topBanner .slideshow .wrapper .slides .slide figure figcaption {
+          padding: 10px;
+          color: #fff;
+          position: absolute;
+          bottom: 20px;
+          text-align: center;
+          width: 100%; }
+  .wrapper .footer {
+    background-color: #0C1400;
+    color: #fff;
+    text-align: center;
+    height: 150px; }
+
+/*# sourceMappingURL=style.css.map */

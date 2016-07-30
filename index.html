@@ -8,24 +8,26 @@
 
         <link rel="stylesheet" href="src/lib/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="src/lib/animate.css/animate.min.css" media="screen" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="src/lib/lato/css/lato.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="src/lib/slider/slideshow.css" media="screen" title="no title" charset="utf-8">
+        <!-- <link rel="stylesheet" href="src/lib/owl-carousel/assets/css/custom.css" media="screen" title="no title" charset="utf-8"> -->
+        <link rel="stylesheet" href="src/lib/lato/css/lato.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="src/lib/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
 
         <!-- <link rel="stylesheet" href="src/css/lib.css" media="screen" title="no title" charset="utf-8"> -->
         <link rel="stylesheet" href="src/css/style.css" media="screen" title="no title" charset="utf-8">
 
-        <script type="text/javascript" src="src/js/lib/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="src/js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="src/js/lib/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="src/lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="src/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="src/lib/slider/slideshow.js"></script>
         <!-- <script type="text/javascript" src="src/js/lib.js"></script> -->
         <script type="text/javascript" src="src/js/main.js"></script>
     </head>
     <body>
-        <div class="wrapper container-fluid">
+        <div class="wrapper">
 
-            <header class="header">
-                <nav class="navbar navbar-default navbar-inverser">
-                    <div class="container-fluid">
+            <header class="header container">
+                <nav class="navbar navbar-default">
+                    <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -52,27 +54,39 @@
             </header>
 
             <section class=''>
-                <div id='home' class="home">
-
-                </div>
-
                 <div id='topBanner' class="topBanner">
+                    
+                    <div id="demo" class="slideshow">
+            			<div class="wrapper">
+            				<!-- <img class="next" width="5%" src="../img/arrow_right.svg" alt="Next" />
+            				<img class="prev" width="5%" src="../img/arrow_left.svg" alt="Previous" /> -->
+            				<div class="slides">
+            					<div class="slide">
+            						<figure>
+            							<img src="src/images/1.jpg" />
+            							<figcaption>Slide 1 lorem ipsum dolor ist</figcaption>
+            						</figure>
+            					</div>
+            					<div class="slide">
+            						<figure>
+            							<img src="src/images/2.jpg" />
+            							<figcaption>Slide 2 Lorem Ipsum</figcaption>
+            						</figure>
+            					</div>
+
+            				</div>
+            			</div>
+            		</div>
                 </div>
 
-                <div id='aboutus' class="aboutus">
+                <div id='aboutus' class="aboutus"></div>
 
-                </div>
+                <div id='tours' class="tours"></div>
 
-                <div id='tours' class="tours">
-
-                </div>
-
-                <div id='contactus' class="contactus">
-
-                </div>
+                <div id='contactus' class="contactus"></div>
             </section>
 
-            <footer class="footer container">
+            <footer class="footer container-fluid">
                 <div class="socialLinks">
                     Social links
                 </div>

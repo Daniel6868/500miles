@@ -1,0 +1,68 @@
+.slideshow.loading {
+	padding: 50px 0;
+	background: url(../img/loader.gif) no-repeat center center;
+	background-color: #eee;	
+}
+
+.slideshow.loading > * {
+	display: none;
+}
+
+.slideshow .wrapper {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.slideshow .slides {
+	position: relative;
+	z-index: 10;
+}
+
+.slideshow .slide {
+	position: relative;
+	float: left;
+	box-sizing: border-box;
+}
+
+/***** slideshow tabs ******/
+.slideshow .slideTabs {
+	text-align: center;
+}
+
+.slideshow .slideTabs a {
+	padding: 10px;
+	margin: 0 5px;
+	line-height: 2em;
+	background: url(../img/dot_grey_small.png) no-repeat center center;
+	opacity: 1;
+}
+
+.slideshow .slideTabs a.selected {
+	background-image: url(../img/dot_blue_small.png);
+}
+
+/***** slideshow buttons *****/
+.slideshow .prev,
+.slideshow .next {
+	text-decoration: underline;
+	cursor: pointer;
+	position: absolute;
+	z-index: 100;
+	padding: 0 3%;
+	top: calc(50% - 20px); /* next/prev buttons are 40px high by default */
+}
+
+.slideshow .prev {
+	left: 0;
+}
+
+.slideshow .next {
+	right: 0;
+}
+
+.slideshow .next.disabled,
+.slideshow .prev.disabled {
+	cursor: default;
+	opacity: 0.3;
+}
