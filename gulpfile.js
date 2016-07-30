@@ -1,5 +1,3 @@
-// 'use strict';
-
 var gulp    = require('gulp'),
     order   = require('gulp-order'),
     concat  = require('gulp-concat'),
@@ -11,13 +9,15 @@ var gulp    = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     watch   = require('gulp-watch')
 ;
-
 // --------------------------------------------------------------------
+//For Build
+gulp.task('getSRC', function(){
+    gulp.src('bower_components/**/*.min.js').pipe(gulp.dest('src/lib/'));
+    gulp.src('bower_components/**/*.min.css').pipe(gulp.dest('src/lib/'));
+    gulp.src('bower_components/**/*.{ttf,woff,woff2,eof,svg}').pipe(gulp.dest('src/lib/'));
 
-//For get-min-scripts
-gulp.task('getminscripts', function(){
-    gulp.src('bower_components/**/*.min.js').pipe(gulp.dest('src/js/lib/'));
 });
+// --------------------------------------------------------------------
 //For min-scripts
 gulp.task('minscripts', function(){
     gulp.src('bower_components/**/*.min.js')
@@ -28,27 +28,16 @@ gulp.task('minscripts', function(){
 //For Scripts
 gulp.task('scripts', function(){
     gulp.src('src/js/*.js')
-        .pipe(order([
-            "main.js"
-        ]))
-        // .pipe(uglify())
+        // .pipe(order([
+        //     "main.js"
+        // ]))
         .pipe(concat('main.js'))
         .pipe(rename({
             suffix: '.min'
         }))
         .pipe(gulp.dest('src/js/'));
 });
-
 // --------------------------------------------------------------------
-
-//For get-min-styles
-gulp.task('getminstyles', function(){
-    gulp.src('bower_components/**/*.min.css')
-        .pipe(concat('lib.css'))
-        .pipe(gulp.dest('src/css/'))
-        // .pipe(browserSync.stream())
-        ;
-});
 //For min-styles
 gulp.task('minstyles', function(){
     gulp.src('src/js/lib/*.min.css')
@@ -60,7 +49,6 @@ gulp.task('minstyles', function(){
         // .pipe(browserSync.stream())
         ;
 });
-
 //For Styles
 gulp.task('styles', function(){
     gulp.src('src/scss/style.scss')
@@ -70,15 +58,7 @@ gulp.task('styles', function(){
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('src/css/'));
 });
-
 // --------------------------------------------------------------------
-
-//For Build
-gulp.task('build', function(){
-    gulp.src(['src/js/lib.js','src/js/main.min.js','src/css/lib.css','src/css/style.css','src/font/**/*.{ttf,woff,eof,svg}','src/images/*.{png,jpg,jpeg,gif}'])
-        .pipe(gulp.dest('build/'));
-});
-
 //For Watch Task
 gulp.task('watch', function(){
     gulp.watch('src/scss/**/*.scss',['styles']);
@@ -88,4 +68,19 @@ gulp.task('watch', function(){
 });
 
 //For Default Task
-gulp.task('default', ['getminscripts','getminstyles','minstyles','minscripts','styles','scripts','build','watch']);
+// gulp.task('default', [
+//     'getminscripts',
+//     'getminstyles',
+//     'minstyles',
+//     'minscripts',
+//     'styles',
+//     'scripts',
+//     'build',
+//     'watch'
+// ]);
+gulp.task('default', [
+    'getSRC',
+    'styles',
+    'scripts',
+    'watch'
+]);

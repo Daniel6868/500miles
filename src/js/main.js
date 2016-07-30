@@ -1,5 +1,6 @@
 //-----------------Js File----------------------
 $(document).ready(function(){
+
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
@@ -21,3 +22,13 @@ $(document).ready(function(){
         }
     });
 });
+
+var Five100miles = {
+    init: function(){
+
+    },
+    loadData: function(){
+
+    }
+    
+};
