@@ -1,0 +1,31 @@
+@import "var.scss";
+
+.tours{
+    padding: 20px;
+    text-align: center;
+    .packages{
+
+        @import "carousel.scss";
+
+        .trip{
+
+            .tripDetail{
+                border: 2px solid #A3B1B8;
+                padding: 3%;
+                border-radius: 10px;
+                img{
+                    width: 100%;
+                    height: 180px;
+                }
+
+                label{
+
+                }
+
+                .readMore{
+                    color: green;
+                }
+            }
+        }
+    }
+}

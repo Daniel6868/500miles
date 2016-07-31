@@ -1,12 +1,29 @@
+@import "var.scss";
+
 .header{
     color: #fff;
 
     .navbar{
-        background-color: transparent;
-        border-color: transparent;
+
+        font-family: $fontFamily1;
+        font-size: 18px;
+    	font-style: normal;
+    	font-variant: small-caps;
+    	font-weight: bold;
+    	line-height: 26.6px;
+
         position: absolute;
         color: #fff;
         z-index: 10000;
+        width: 97%;
+
+        background: transparent;
+        background-color: rgba(0,0,0,0.2);
+        border-top: 0px solid rgb(77,200,236);
+        border-right: 0px solid rgb(77,200,236);
+        border-bottom: 0px solid rgb(77,200,236);
+        border-left: 0px solid rgb(77,200,236);
+        border-radius: 0px;
 
         .navbar-default{
             background-color: transparent;

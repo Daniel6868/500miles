@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="src/lib/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="src/lib/animate.css/animate.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="src/lib/slider/slideshow.css" media="screen" title="no title" charset="utf-8">
-        <!-- <link rel="stylesheet" href="src/lib/owl-carousel/assets/css/custom.css" media="screen" title="no title" charset="utf-8"> -->
+        <link rel="stylesheet" href="src/lib/owl-carousel/assets/css/owl.carousel.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="src/lib/owl-carousel/assets/css/owl.theme.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="src/lib/lato/css/lato.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="src/lib/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
 
@@ -19,16 +20,16 @@
         <script type="text/javascript" src="src/lib/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="src/lib/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="src/lib/slider/slideshow.js"></script>
+        <script type="text/javascript" src="src/lib/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
         <!-- <script type="text/javascript" src="src/js/lib.js"></script> -->
         <script type="text/javascript" src="src/js/main.js"></script>
     </head>
     <body>
         <div class="wrapper">
 
-            <header class="header container">
+            <header class="header container-fluid">
                 <nav class="navbar navbar-default">
                     <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
@@ -38,60 +39,178 @@
                             </button>
                             <a class="navbar-brand bounce" href="#">Five100Miles.com</a>
                         </div>
-
-                        <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav pull-right">
                                 <li><a href="#home">Home</a></li>
-                                <li><a href="#aboutUs">AboutUs</a></li>
+                                <li><a href="#aboutUs">About Us</a></li>
                                 <li><a href="#tours">Tours</a></li>
                                 <li><a href="#gallery">Gallery</a></li>
-                                <li><a href="#contactUs">ContactUs</a></li>
+                                <li><a href="#contactUs">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </header>
 
-            <section class=''>
+            <section class="">
                 <div id='topBanner' class="topBanner">
-                    
-                    <div id="demo" class="slideshow">
+                    <div id="mainBanner" class="slideshow">
             			<div class="wrapper">
-            				<!-- <img class="next" width="5%" src="../img/arrow_right.svg" alt="Next" />
-            				<img class="prev" width="5%" src="../img/arrow_left.svg" alt="Previous" /> -->
             				<div class="slides">
             					<div class="slide">
             						<figure>
-            							<img src="src/images/1.jpg" />
-            							<figcaption>Slide 1 lorem ipsum dolor ist</figcaption>
+            							<img src="src/images/4.jpg" />
+                                        <div class="container">
+                                            <figcaption>
+                                                <h3>Test1</h3>
+                                                <p>
+                                                    Test
+                                                </p>
+                                            </figcaption>
+                                        </div>
             						</figure>
             					</div>
             					<div class="slide">
             						<figure>
             							<img src="src/images/2.jpg" />
-            							<figcaption>Slide 2 Lorem Ipsum</figcaption>
+                                        <div class="container">
+            		                        <figcaption>
+                                                <h3>Test1</h3>
+                                                <p>
+                                                    Test
+                                                </p>
+                                            </figcaption>
+                                        </div>
             						</figure>
             					</div>
-
+                                <div class="slide">
+                                    <figure>
+                                        <img src="src/images/3.jpg" />
+                                        <div class="container">
+                                            <figcaption>
+                                                <h3>Test1</h3>
+                                                <p>
+                                                    Test
+                                                </p>
+                                            </figcaption>
+                                        </div>
+                                    </figure>
+                                </div>
             				</div>
             			</div>
             		</div>
                 </div>
 
-                <div id='aboutus' class="aboutus"></div>
+                <div id='aboutus' class="aboutus"><h2></h2><h1></h1><p></p></div>
 
-                <div id='tours' class="tours"></div>
+                <div class="countArea">
+                    <div class="row">
+                        <div class="clients col-md-3"><i class='fa fa-users'></i><p class="count"></p><p>happy travellers</p></div>
+                        <div class="videos col-md-3"><i class='fa fa-video-camera'></i><p class="count"></p><p>videos</p></div>
+                        <div class="photos col-md-3"><i class='fa fa-picture-o'></i><p class="count"></p><p>photos</p></div>
+                        <div class="trips col-md-3"><i class='fa fa-plane'></i><p class="count"></p><p>tours and treks</p></div>
+                    </div>
 
-                <div id='contactus' class="contactus"></div>
+                </div>
+
+                <div id='tours' class="tours">
+                    <h2>Our Tours and Treks:</h2>
+                    <div class="packages rows">
+                        <div id="tourSlider" class="owl-carousel">
+
+                            <div class="trip item">
+                                <div class="tripDetail">
+                                    <img src="src/images/4.jpg" alt="" />
+                                    <label for="">Trip1</label>
+                                    <summary>Trip summary</summary>
+                                    <a class='readMore' href="#">Read More...</a>
+                                </div>
+                            </div>
+                            <div class="trip item">
+                                <div class="tripDetail">
+                                    <img src="src/images/4.jpg" alt="" />
+                                    <label for="">Trip1</label>
+                                    <summary>Trip summary</summary>
+                                    <a class='readMore' href="#">Read More...</a>
+                                </div>
+                            </div>
+                            <div class="trip item">
+                                <div class="tripDetail">
+                                    <img src="" alt="" />
+                                    <label for="">Trip1</label>
+                                    <summary>Trip summary</summary>
+                                    <a class='readMore' href="#">Read More...</a>
+                                </div>
+                            </div>
+                            <div class="trip item">
+                                <div class="tripDetail">
+                                    <img src="" alt="" />
+                                    <label for="">Trip1</label>
+                                    <summary>Trip summary</summary>
+                                    <a class='readMore' href="#">Read More...</a>
+                                </div>
+                            </div>
+                            <div class="trip item">
+                                <div class="tripDetail">
+                                    <img src="" alt="" />
+                                    <label for="">Trip1</label>
+                                    <summary>Trip summary</summary>
+                                    <a class='readMore' href="#">Read More...</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews ">
+                    <h2>Testimonials</h2>
+                    <div class="container reviewArea">
+                        <div id="reviewSlider" class="owl-carousel"></div>
+                    </div>
+
+                </div>
+
+                <div id='contactus' class="contactus row">
+                    <div class="ownAddress col-md-6">
+                        <div class="mobile">
+                            <i class='fa fa-mobile'></i> | +91 99999 99999
+                        </div>
+                        <div class="email">
+                            <i class='fa fa-envelope-o'></i> | mail@example.com
+                        </div>
+                        <div class="address">
+                            <i class='fa fa-location-arrow'></i> | +91 99999 99999
+                        </div>
+                    </div>
+
+                    <div class="userData col-md-6">
+                        <h2></h2>
+                        <form class="" action="index.html" method="post">
+                            <label for="">Name:</label> <input type="text" name="name" value=""><br>
+                            <label for="">Mobile:</label> <input type="text" name="name" value=""><br>
+                            <label for="">Eamil:</label> <input type="text" name="name" value=""><br>
+                            <label for="">Comments:</label> <textarea name="name" rows="5" cols="20"></textarea><br>
+                            <input type="button" name="Submit" value="submit">
+                        </form>
+                    </div>
+
+                </div>
+
             </section>
 
             <footer class="footer container-fluid">
                 <div class="socialLinks">
-                    Social links
+                    <ul class='connections'>
+                        <li><a href='http://www.facebook.com/'><i class="fa fa-facebook fb"></i></a></li>
+                        <li><a href='https://plus.google.com/'><i class="fa fa-google-plus gp"></i></a></li>
+                        <li><a href='http://twitter.com/'><i class="fa fa-twitter tw"></i></a></li>
+                        <li><a href='http://pinterest.com/'><i class="fa fa-pinterest pt"></i></a></li>
+                        <li><a href='http://youtube.com/'><i class="fa fa-youtube yt"></i></a></li>
+                    </ul>
                 </div>
                 <div class="copyright">
-                    Copyright
+                    Five100miles.com &#169;, 2016 - Powered by
                 </div>
             </footer>
         </div>

@@ -1,0 +1,98 @@
+{
+    "topBanners":[
+        {
+            "capHead":"",
+            "caption":"",
+            "url":"src/images/4.jpg"
+        },
+        {
+            "capHead":"",
+            "caption":"",
+            "url":"src/images/2.jpg"
+        },
+        {
+            "capHead":"",
+            "caption":"",
+            "url":"src/images/3.jpg"
+        }
+
+    ],
+    "aboutUs":{
+        "h1":"Welcome",
+        "h2":"About Five100miles.com",
+        "h3":"",
+        "p":"This is just a text describing about Five100miles.com and their services."
+    },
+    "trips":[
+        {
+            "tripName":"tour1",
+            "tripTime":"5 days",
+            "tripLocs":["Leh",""],
+            "tripSummary":"",
+            "tripDes":"",
+            "tripGuide":"",
+            "tripPoster":"src/images/1.jpg",
+            "tripImages":[]
+        },
+        {
+            "tripName":"tour2",
+            "tripTime":"5 days",
+            "tripLocs":["Leh",""],
+            "tripSummary":"",
+            "tripDes":"",
+            "tripGuide":"",
+            "tripPoster":"src/images/2.jpg",
+            "tripImages":[]
+        },
+        {
+            "tripName":"tour3",
+            "tripTime":"5 days",
+            "tripLocs":["Leh",""],
+            "tripSummary":"",
+            "tripDes":"",
+            "tripGuide":"",
+            "tripPoster":"src/images/3.jpg",
+            "tripImages":[]
+        },
+        {
+            "tripName":"tour4",
+            "tripTime":"5 days",
+            "tripLocs":["Leh",""],
+            "tripSummary":"",
+            "tripDes":"",
+            "tripGuide":"",
+            "tripPoster":"src/images/4.jpg",
+            "tripImages":[]
+        }
+    ],
+    "countData":{
+        "travellers":123456,
+        "videos":35,
+        "photos":50,
+        "tours":5
+    },
+    "reviews":[
+        {
+            "userName":"Debayan Sen",
+            "userImg":"src/images/9.jpg",
+            "userReview":"Great way to find the adventures that the world has to offer.",
+            "userTrip":"Himalaya Trip",
+            "userRating":"5"
+        },
+        {
+            "userName":"Arindam Ghosh",
+            "userImg":"src/images/9.jpg",
+            "userReview":"Great way to find the adventures that the world has to offer.",
+            "userTrip":"Himalaya Trip",
+            "userRating":"5"
+        },
+        {
+            "userName":"John F Kennedy",
+            "userImg":"https://upload.wikimedia.org/wikipedia/commons/5/5e/John_F._Kennedy,_White_House_photo_portrait,_looking_up.jpg",
+            "userReview":"Great way to find the adventures that the world has to offer.",
+            "userTrip":"Himalaya Trip",
+            "userRating":"5"
+        }
+    ],
+    "":""
+}

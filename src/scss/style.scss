@@ -12,10 +12,12 @@
     @import "header.scss";
 
     @import "topBanner.scss";
-    // @import "aboutus.scss";
-    // @import "tours.scss";
+    @import "aboutus.scss";
+    @import "countArea";
+    @import "tours.scss";
     // @import "gallery.scss";
-    // @import "contactus.scss";
+    @import "reviews.scss";
+    @import "contactus.scss";
     @import "footer.scss";
 
 }
