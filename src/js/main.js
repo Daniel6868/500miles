@@ -68,6 +68,7 @@ var Five100miles = {
             tours += '<label for="">'+trips[i].tripName+'</label>';
             tours += '<summary>'+trips[i].tripName+'</summary>';
             tours += '<a class="readMore" href='+trips[i].tripName+'>Read More...</a>';
+            tours += '<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Read More...</button>';
             tours += '</div></div>';
         }
         // console.log(tours);

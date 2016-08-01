@@ -105,10 +105,10 @@
 
                 <div class="countArea">
                     <div class="row">
-                        <div class="clients col-md-3"><i class='fa fa-users'></i><p class="count"></p><p>happy travellers</p></div>
-                        <div class="videos col-md-3"><i class='fa fa-video-camera'></i><p class="count"></p><p>videos</p></div>
-                        <div class="photos col-md-3"><i class='fa fa-picture-o'></i><p class="count"></p><p>photos</p></div>
-                        <div class="trips col-md-3"><i class='fa fa-plane'></i><p class="count"></p><p>tours and treks</p></div>
+                        <div class="clients col-xs-6 col-md-3 "><i class='fa fa-users'></i><p class="count"></p><p>happy travellers</p></div>
+                        <div class="videos col-xs-6 col-md-3 "><i class='fa fa-video-camera'></i><p class="count"></p><p>videos</p></div>
+                        <div class="photos col-xs-6 col-md-3 "><i class='fa fa-picture-o'></i><p class="count"></p><p>photos</p></div>
+                        <div class="trips col-xs-6 col-md-3 "><i class='fa fa-plane'></i><p class="count"></p><p>tours and treks</p></div>
                     </div>
 
                 </div>
@@ -123,7 +123,10 @@
                                     <img src="src/images/4.jpg" alt="" />
                                     <label for="">Trip1</label>
                                     <summary>Trip summary</summary>
-                                    <a class='readMore' href="#">Read More...</a>
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                        Read More...
+                                    </button>
+
                                 </div>
                             </div>
                             <div class="trip item">
@@ -168,8 +171,12 @@
                     <div class="container reviewArea">
                         <div id="reviewSlider" class="owl-carousel"></div>
                     </div>
+                </div>
+
+                <div class="gallery">
 
                 </div>
+
 
                 <div id='contactus' class="contactus row">
                     <div class="ownAddress col-md-6">
@@ -198,6 +205,34 @@
                 </div>
 
             </section>
+
+
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Launch demo modal2
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Launch demo modal3
+            </button>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <footer class="footer container-fluid">
                 <div class="socialLinks">
