@@ -5,60 +5,17 @@ $color1: #fff;
 .footer{
     background-color: #0C1400;
     color: #fff;
+    font-family: $fontFamily1;
     text-align: center;
     // padding: 20px;
     // height: 150px;
-    .socialLinks{
-        padding: 20px;
 
-        .connections{
-            list-style: none;
-            display: inline-block;
-            padding:5px;
-            margin: 0px;
-            li{
-                display: inline-block;
-                text-align: center;
-                margin: 0px 1px;
-                a{
-                    .fa{
-                        border: 2px solid #fff;
-                        padding: 10px;
-                        border-radius: 50%;
-                        width: 50px;
-                        color: #fff;
-                        // font-family: $contentFontFamily;
-                        font-size: 25px;
-                        margin: 0px 10px;
-                        &:hover{
-                            border: 2px solid $color1;
-                            color: $color1;
-                        }
-                    }
-                    .fb{
-                        background-color: #3b5998;
-                    }
-                    .gp{
-                        background-color: #d34836;
-                    }
-                    .tw{
-                        background-color: #2cb2e4;
-                    }
-                    .pt{
-                        background-color: #C92228;
-                    }
-                    .yt{
-                        background-color: #e52d27;
-                    }
-                    .wa{
-                        background-color: #50CA5E;
-                    }
-                }
-            }
+    .copyright{
+        padding: 10px;
+        margin: 10px;
+
+        a{
+            color: purple;
         }
-    }
-    .copyRight{
-        margin: 20px;
-
     }
 }

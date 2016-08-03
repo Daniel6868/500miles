@@ -101,12 +101,12 @@
             		</div>
                 </div>
 
-                <div id='aboutus' class="aboutus"><h2></h2><h1></h1><p></p></div>
+                <div id='aboutus' class="aboutus container"><h2></h2><h1></h1><p></p></div>
 
                 <div class="countArea">
                     <div class="row">
                         <div class="clients col-xs-6 col-md-3 "><i class='fa fa-users'></i><p class="count"></p><p>happy travellers</p></div>
-                        <div class="videos col-xs-6 col-md-3 "><i class='fa fa-video-camera'></i><p class="count"></p><p>videos</p></div>
+                        <div class="videos col-xs-6 col-md-3 "><i class='fa fa-video-camera'></i><p class="count"></p><p>places</p></div>
                         <div class="photos col-xs-6 col-md-3 "><i class='fa fa-picture-o'></i><p class="count"></p><p>photos</p></div>
                         <div class="trips col-xs-6 col-md-3 "><i class='fa fa-plane'></i><p class="count"></p><p>tours and treks</p></div>
                     </div>
@@ -145,23 +145,6 @@
                                     <a class='readMore' href="#">Read More...</a>
                                 </div>
                             </div>
-                            <div class="trip item">
-                                <div class="tripDetail">
-                                    <img src="" alt="" />
-                                    <label for="">Trip1</label>
-                                    <summary>Trip summary</summary>
-                                    <a class='readMore' href="#">Read More...</a>
-                                </div>
-                            </div>
-                            <div class="trip item">
-                                <div class="tripDetail">
-                                    <img src="" alt="" />
-                                    <label for="">Trip1</label>
-                                    <summary>Trip summary</summary>
-                                    <a class='readMore' href="#">Read More...</a>
-                                </div>
-
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,78 +157,90 @@
                 </div>
 
                 <div class="gallery">
+                    <h2>Our Gallery:</h2>
+                    <div class="photoSlide rows">
+                        <div id="photoSlide" class="owl-carousel">
 
+                            <div class="tripPics item" data-toggle="modal" data-target="#myModal">
+                                <div class="tripPicsDetail">
+                                    <img src="src/images/1.jpg" alt="" />
+                                    <label for="">Trip Name</label>
+                                    <summary>Date: </summary>
+                                </div>
+                            </div>
+                            <div class="tripPics item">
+                                <div class="tripPicsDetail">
+                                    <img src="src/images/2.jpg" alt="" />
+                                    <label for="">Trip Name: </label>
+                                    <summary>Date: </summary>
+                                </div>
+                            </div>
+                            <div class="tripPics item">
+                                <div class="tripPicsDetail">
+                                    <img src="src/images/3.jpg" alt="" />
+                                    <label for="">Trip Name: </label>
+                                    <summary>Date: </summary>
+                                </div>
+                            </div>
+                            <div class="tripPics item">
+                                <div class="tripPicsDetail">
+                                    <img src="src/images/4.jpg" alt="" />
+                                    <label for="">Trip Name: </label>
+                                    <summary>Date: </summary>
+                                </div>
+                            </div>
+                            <div class="tripPics item">
+                                <div class="tripPicsDetail">
+                                    <img src="src/images/5.jpg" alt="" />
+                                    <label for="">Trip Name: </label>
+                                    <summary>Date: </summary>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-
-                <div id='contactus' class="contactus row">
-                    <div class="ownAddress col-md-6">
-                        <div class="mobile">
+                <div id='contactus' class="contactus ">
+                    <div class="ownAddress row">
+                        <div class="mobile col-md-4">
                             <i class='fa fa-mobile'></i> | +91 99999 99999
                         </div>
-                        <div class="email">
+                        <div class="email col-md-4">
                             <i class='fa fa-envelope-o'></i> | mail@example.com
                         </div>
-                        <div class="address">
+                        <div class="address col-md-4">
                             <i class='fa fa-location-arrow'></i> | +91 99999 99999
                         </div>
                     </div>
-
-                    <div class="userData col-md-6">
-                        <h2></h2>
-                        <form class="" action="index.html" method="post">
-                            <label for="">Name:</label> <input type="text" name="name" value=""><br>
-                            <label for="">Mobile:</label> <input type="text" name="name" value=""><br>
-                            <label for="">Eamil:</label> <input type="text" name="name" value=""><br>
-                            <label for="">Comments:</label> <textarea name="name" rows="5" cols="20"></textarea><br>
-                            <input type="button" name="Submit" value="submit">
-                        </form>
+                    <div class="socialLinks container">
+                        <ul class='connections'>
+                            <li><a href='http://www.facebook.com/'><i class="fa fa-facebook fb"></i></a></li>
+                            <li><a href='https://plus.google.com/'><i class="fa fa-google-plus gp"></i></a></li>
+                            <li><a href='http://twitter.com/'><i class="fa fa-twitter tw"></i></a></li>
+                            <li><a href='http://pinterest.com/'><i class="fa fa-pinterest pt"></i></a></li>
+                            <li><a href='http://youtube.com/'><i class="fa fa-youtube yt"></i></a></li>
+                        </ul>
                     </div>
-
                 </div>
 
             </section>
-
-
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Launch demo modal2
-            </button>
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Launch demo modal3
-            </button>
 
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                         </div>
-                        <div class="modal-body">
-                        ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer">Five100miles.com &#169;, 2016 - Crafted with love by PurpleSwans.com</div>
                     </div>
                 </div>
             </div>
 
             <footer class="footer container-fluid">
-                <div class="socialLinks">
-                    <ul class='connections'>
-                        <li><a href='http://www.facebook.com/'><i class="fa fa-facebook fb"></i></a></li>
-                        <li><a href='https://plus.google.com/'><i class="fa fa-google-plus gp"></i></a></li>
-                        <li><a href='http://twitter.com/'><i class="fa fa-twitter tw"></i></a></li>
-                        <li><a href='http://pinterest.com/'><i class="fa fa-pinterest pt"></i></a></li>
-                        <li><a href='http://youtube.com/'><i class="fa fa-youtube yt"></i></a></li>
-                    </ul>
-                </div>
                 <div class="copyright">
-                    Five100miles.com &#169;, 2016 - Powered by
+                    Five100miles.com &#169;, 2016 - Crafted with love by <a href='http://www.purpleswans.com'>PurpleSwans.com</a>
                 </div>
             </footer>
         </div>

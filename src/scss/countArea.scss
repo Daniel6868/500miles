@@ -6,10 +6,10 @@ $color1:#135;
     margin: 0px !important;
     font-family: "lato";
     background-image: url("../images/9.jpg");
-    height: 150px;
+    // height: 150px;
     background-repeat: no-repeat;
-        background-size: cover;
-    padding: 10% 5% 15% 5%;
+    background-size: cover;
+    padding: 5%;
 
     .row{
         margin: 0px;
@@ -19,7 +19,7 @@ $color1:#135;
             border: 3px solid #12A;
             padding: 10px;
             border-radius: 50%;
-            width: 84px;
+            width: 70px;
             color: $color1;
             background-color: #fff;
             font-size: 36px;

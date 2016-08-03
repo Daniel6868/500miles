@@ -21,7 +21,7 @@
         "h1":"Welcome",
         "h2":"About Five100miles.com",
         "h3":"",
-        "p":"This is just a text describing about Five100miles.com and their services."
+        "p":"Crafted with passion and creativity, Five100Miles is customized by industry’s best professionals to creating the best packages of the industry and have people lived and breathed through these tours. We believe in creating unique and unforgettable experiences and share indelible memories with you."
     },
     "trips":[
         {
@@ -67,7 +67,7 @@
     ],
     "countData":{
         "travellers":123456,
-        "videos":35,
+        "places":35,
         "photos":50,
         "tours":5
     },
@@ -94,5 +94,9 @@
             "userRating":"5"
         }
     ],
-    "":""
+    "contactDetails":{
+        "mobile":"99999 99999",
+        "email":"examplemail@example.com",
+        "address":"example- address"
+    }
 }

@@ -18,6 +18,10 @@ $(document).ready(function(){
         displayTime: 4000
     });
 
+    $("#photoSlide").owlCarousel({
+        navigation : true,
+        items:3
+    });
 
 });
 
@@ -56,7 +60,7 @@ var Five100miles = {
     },
     countData: function(data){
         $('.countArea > .row > .clients > .count').html(data.travellers);
-        $('.countArea > .row > .videos > .count').html(data.videos);
+        $('.countArea > .row > .videos > .count').html(data.places);
         $('.countArea > .row > .photos > .count').html(data.photos);
         $('.countArea > .row > .trips > .count').html(data.tours);
     },
