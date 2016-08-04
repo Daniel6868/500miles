@@ -76,21 +76,21 @@
     },
     "reviews":[
         {
-            "userName":"Debanko Sengupta",
-            "userImg":"src/images/9.jpg",
-            "userReview":"Great way to find the adventures that the world has to offer.",
-            "userTrip":" Trip",
-            "userRating":"5"
-        },
-        {
-            "userName":"Arijit Ghoshal",
+            "userName":"Debayan Sen",
             "userImg":"src/images/9.jpg",
             "userReview":"Great way to find the adventures that the world has to offer.",
             "userTrip":"Himalaya Trip",
             "userRating":"5"
         },
         {
-            "userName":"Akshay Agarwal",
+            "userName":"Arindam Ghosh",
+            "userImg":"src/images/9.jpg",
+            "userReview":"Great way to find the adventures that the world has to offer.",
+            "userTrip":"Himalaya Trip",
+            "userRating":"5"
+        },
+        {
+            "userName":"John F Kennedy",
             "userImg":"https://upload.wikimedia.org/wikipedia/commons/5/5e/John_F._Kennedy,_White_House_photo_portrait,_looking_up.jpg",
             "userReview":"Great way to find the adventures that the world has to offer.",
             "userTrip":"Himalaya Trip",
