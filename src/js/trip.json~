@@ -21,7 +21,7 @@
         "h1":"Welcome",
         "h2":"About Five100miles.com",
         "h3":"",
-        "p":"Crafted with passion and creativity, Five100Miles is customized by industry’s best professionals to creating the best packages of the industry and have people lived and breathed through these tours. We believe in creating unique and unforgettable experiences and share indelible memories with you."
+        "p":"This is just a text describing about Five100miles.com and their services."
     },
     "trips":[
         {
@@ -76,47 +76,26 @@
     },
     "reviews":[
         {
-            "userName":"Debanko Sengupta",
-            "userImg":"src/images/9.jpg",
-            "userReview":"Great way to find the adventures that the world has to offer.",
-            "userTrip":" Trip",
-            "userRating":"5"
-        },
-        {
-            "userName":"Arijit Ghoshal",
+            "userName":"Debayan Sen",
             "userImg":"src/images/9.jpg",
             "userReview":"Great way to find the adventures that the world has to offer.",
             "userTrip":"Himalaya Trip",
             "userRating":"5"
         },
         {
-            "userName":"Akshay Agarwal",
+            "userName":"Arindam Ghosh",
+            "userImg":"src/images/9.jpg",
+            "userReview":"Great way to find the adventures that the world has to offer.",
+            "userTrip":"Himalaya Trip",
+            "userRating":"5"
+        },
+        {
+            "userName":"John F Kennedy",
             "userImg":"https://upload.wikimedia.org/wikipedia/commons/5/5e/John_F._Kennedy,_White_House_photo_portrait,_looking_up.jpg",
             "userReview":"Great way to find the adventures that the world has to offer.",
             "userTrip":"Himalaya Trip",
             "userRating":"5"
         }
     ],
-    "galleryData":"",
-    "contactDetails":{
-        "mobile":"99999 99999",
-        "email":"examplemail@example.com",
-        "address":"example-address",
-        "socailLinks":[{
-                "facebook":""
-            },
-            {
-                "gPlus":""
-            },
-            {
-                "twitter":""
-            },
-            {
-                "pintrest":""
-            },
-            {
-                "youtube":""
-            }
-        ]
-    }
+    "":""
 }
