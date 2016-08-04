@@ -17,6 +17,7 @@
       color: #fff;
       z-index: 10000;
       width: 97%;
+      box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 0.2);
       background: transparent;
       background-color: rgba(0, 0, 0, 0.2);
       border-top: 0px solid #4dc8ec;
@@ -30,7 +31,7 @@
         position: absolute; }
       .wrapper .header .navbar a {
         color: #fff; }
-        .wrapper .header .navbar a:hover {
+        .wrapper .header .navbar a:hover, .wrapper .header .navbar a:focus {
           color: #fff;
           text-decoration: underline; }
         .wrapper .header .navbar a img {
@@ -52,13 +53,14 @@
         width: 80%;
         padding: 35px 0px 35px 35px;
         background: transparent;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.59);
         border-top: 0px solid #4dc8ec;
         border-right: 0px solid #4dc8ec;
         border-bottom: 0px solid #4dc8ec;
         border-left: 5px solid #4dc8ec; }
   .wrapper .aboutus {
-    text-align: center; }
+    text-align: center;
+    padding: 20px; }
   .wrapper .countArea {
     margin: 0px !important;
     font-family: "lato";
@@ -138,14 +140,16 @@
       user-select: none;
       -webkit-tap-highlight-color: transparent; }
     .wrapper .gallery .tripPics .tripPicsDetail {
+      cursor: pointer;
       border: 2px solid #A3B1B8;
+      border-radius: 10px;
       padding: 3%;
-      border-radius: 10px; }
+      text-align: center; }
       .wrapper .gallery .tripPics .tripPicsDetail img {
         width: 100%;
         height: 180px; }
-      .wrapper .gallery .tripPics .tripPicsDetail .readMore {
-        color: green; }
+      .wrapper .gallery .tripPics .tripPicsDetail label {
+        padding: 1%; }
   .wrapper .reviews {
     margin: 0px !important;
     font-family: "lato";

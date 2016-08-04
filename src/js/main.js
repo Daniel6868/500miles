@@ -32,13 +32,15 @@ var Five100miles = {
             aboutUsData = webData.aboutUs,
             tripsData = webData.trips,
             countData = webData.countData,
-            reviewData = webData.reviews
+            reviewData = webData.reviews,
+            contactData = webData.contactDetails
             ;
         Five100miles.topBanners(topBannersData);
         Five100miles.aboutUs(aboutUsData);
         Five100miles.tours(tripsData);
         Five100miles.countData(countData);
         Five100miles.reviews(reviewData);
+        Five100miles.contactus(contactData);
     },
     aboutUs: function(data){
         $('.aboutus>h1').html(data.h1);
@@ -71,8 +73,8 @@ var Five100miles = {
             tours += '<img src='+trips[i].tripPoster+' />';
             tours += '<label for="">'+trips[i].tripName+'</label>';
             tours += '<summary>'+trips[i].tripName+'</summary>';
-            tours += '<a class="readMore" href='+trips[i].tripName+'>Read More...</a>';
-            tours += '<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Read More...</button>';
+            tours += '<a class="readMore" href='+trips[i].tripName+' data-toggle="modal" data-target="#myModal">Read More...</a>';
+            // tours += '<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Read More...</button>';
             tours += '</div></div>';
         }
         // console.log(tours);
@@ -102,7 +104,10 @@ var Five100miles = {
         });
     },
     contactus: function(data){
-
+        console.log(data);
+        $('.contactus > .ownAddress > .mobile').html("<i class='fa fa-mobile'></i> | +"+data.mobile);
+        $('.contactus > .ownAddress > .email').html("<i class='fa fa-envelope-o'></i> | "+data.email);
+        $('.contactus > .ownAddress > .address').html("<i class='fa fa-location-arrow'></i> | "+data.address);
     }
 
 };
