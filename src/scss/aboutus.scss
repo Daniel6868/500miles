@@ -1,19 +1,20 @@
 @import "var.scss";
 
 .aboutus{
-    // height: 400px;
     text-align: center;
-    padding: 20px;
+    padding: 4%;
 
     h1{
-
+        font-size: $h1FontSize;
     }
     h2{
-
-
+        font-size: $h2FontSize;
+        font-style: italic;
+        text-decoration: underline;
     }
     p{
-
+        font-size: $pFontSize;
+        line-height: 2em;
 
     }
 }

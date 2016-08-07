@@ -1,6 +1,5 @@
 //-----------------Js File----------------------
 $(document).ready(function(){
-
     $.ajax({
         async: true,
         url:"src/js/trip.json",
@@ -11,18 +10,6 @@ $(document).ready(function(){
             Five100miles.init(data);
         }
     });
-    var slideshow = new Slideshow({
-        id : 'mainBanner',
-        loop: true,
-        autoplay: true,
-        displayTime: 4000
-    });
-
-    $("#photoSlide").owlCarousel({
-        navigation : true,
-        items:3
-    });
-
 });
 
 var Five100miles = {
@@ -33,6 +20,7 @@ var Five100miles = {
             tripsData = webData.trips,
             countData = webData.countData,
             reviewData = webData.reviews,
+            galleryData = webData.galleryData,
             contactData = webData.contactDetails
             ;
         Five100miles.topBanners(topBannersData);
@@ -40,7 +28,9 @@ var Five100miles = {
         Five100miles.tours(tripsData);
         Five100miles.countData(countData);
         Five100miles.reviews(reviewData);
+        Five100miles.gallery(galleryData);
         Five100miles.contactus(contactData);
+        Five100miles.bind();
     },
     aboutUs: function(data){
         $('.aboutus>h1').html(data.h1);
@@ -51,13 +41,21 @@ var Five100miles = {
     topBanners: function(data){
         var banners = data, slides = '';
         for(var i=0; i<banners.length; i++){
-            slides += '<div class="slide"><figure>';
+            slides += '<div class="banner item"><figure>';
             slides += '<img src='+banners[i].url+' />';
             slides += '<div class="container"><figcaption><h3>'+banners[i].capHead+'</h3><p>'+banners[i].caption+'</p></figcaption></div>';
             slides += '</figure></div>';
         }
         // console.log(slides);
-        // $('.slides').html(slides);
+        $('.topBanner').html(slides).owlCarousel({
+            navigation : false,
+            autoPlay: true,
+            responsive: true,
+            mouseDrag:false,
+            pagination: false,
+            responsive:true,
+            items:1
+        });
 
     },
     countData: function(data){
@@ -72,17 +70,37 @@ var Five100miles = {
             tours += '<div class="trip item"><div class="tripDetail">';
             tours += '<img src='+trips[i].tripPoster+' />';
             tours += '<label for="">'+trips[i].tripName+'</label>';
-            tours += '<summary>'+trips[i].tripName+'</summary>';
-            tours += '<a class="readMore" href='+trips[i].tripName+' data-toggle="modal" data-target="#myModal">Read More...</a>';
-            // tours += '<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Read More...</button>';
+            tours += '<summary>'+trips[i].tripSummary+'</summary>';
+            tours += '<a class="readMore" href="" data-id='+i+' data-toggle="modal" data-target="#myModal">... Read More</a>';
             tours += '</div></div>';
         }
-        // console.log(tours);
         $("#tourSlider").html(tours).owlCarousel({
             navigation : true,
+            responsive:true,
             items:3
         });
+        $('.readMore').off().on('click', function(){
+            var tourDetails = "", tourId = $(this).attr('data-id');
+            tourDetails += "<div class='tourDetails'>";
+            tourDetails += "<div class='tourPoster'><img src="+trips[tourId].tripPoster+" /></div>";
+            tourDetails += "<div class='tourPlaces'>";
+            for(var i=0; i<trips[tourId].tripLocs.length; i++){
+                tourDetails += trips[tourId].tripLocs[i];
+                if(i != trips[tourId].tripLocs.length-1){
+                    tourDetails += '<span class="seperator"> - </span>';
+                }
+            }
+            tourDetails += "</div>";
+            tourDetails += "<hr/>";
+            tourDetails += "<div class='tourDesc'><h4>Description:</h4>"+trips[tourId].tripDes+"</div>";
+            tourDetails += "<div class='rows'><div class='tourTime col-md6'><h4>Total time taken: "+trips[tourId].tripTime+"</h4></div>";
+            tourDetails += "<div class='tourGuide col-md6'><h4>Your Guide: "+trips[tourId].tripGuide+"</h4></div></div>";
+            tourDetails += "<a href='#contactus'><h4>Contact Details</h4></div>";
+            tourDetails += "</div>";
 
+            $('.modal-title').html(trips[tourId].tripName);
+            $('.modal-body').html(tourDetails);
+        });
     },
     reviews: function(data){
         var reviewData = data, reviews = '';
@@ -99,15 +117,55 @@ var Five100miles = {
         $("#reviewSlider").html(reviews).owlCarousel({
             navigation : false,
             items:2,
+            stopOnHover: true,
+            responsive:true,
             autoPlay:true
+        });
+    },
+    gallery:function(data){
+        var galleryData = data, gallery = '';
+        for(var i=0; i<galleryData.length; i++){
+            gallery += '<div class="tripPics item" data-id='+i+' data-toggle="modal" data-target="#myModal"><div class="tripPicsDetail">';
+            gallery += '<img src='+galleryData[i].tripPoster+' />';
+            gallery += '<label>Trip Name: '+galleryData[i].tripName+'</label>';
+            gallery += '</div></div>';
+        }
+        $("#photoSlide").html(gallery).owlCarousel({
+            navigation : true,
+            responsive:true,
+            items:3
+        });
 
+        $('.tripPics').off().on('click', function(){
+            var galleryDetails = "", galleryId = $(this).attr('data-id');
+            // galleryDetails += "<div id='galleryDetails' class=''>";
+            galleryDetails += "<div id='galleryDetails' class='owl-carousel'>";
+            for(var i=0; i<galleryData[galleryId].tripPics.length; i++){
+                galleryDetails += "<div class='galleryPic item'><img src="+galleryData[galleryId].tripPics[i]+" style='width:100%;'/></div>";
+            }
+            // galleryDetails += "</div>";
+            galleryDetails += "</div>";
+
+            $('.modal-title').html(galleryData[galleryId].tripName);
+            $('.modal-body').html(galleryDetails);
+            $("#galleryDetails").owlCarousel({
+                navigation : true,
+                responsive:true,
+                lazyload: true,
+                items:1
+            });
         });
     },
     contactus: function(data){
-        console.log(data);
         $('.contactus > .ownAddress > .mobile').html("<i class='fa fa-mobile'></i> | +"+data.mobile);
         $('.contactus > .ownAddress > .email').html("<i class='fa fa-envelope-o'></i> | "+data.email);
         $('.contactus > .ownAddress > .address').html("<i class='fa fa-location-arrow'></i> | "+data.address);
+    },
+    bind:function(){
+        // $('.close').off().on('click', function(){
+        $('#myModal').on('hidden.bs.modal', function (){
+            $('.modal-title').html('');
+            $('.modal-body').html('');
+        });
     }
-
 };

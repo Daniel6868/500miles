@@ -6,7 +6,6 @@ $color1:#135;
     margin: 0px !important;
     font-family: "lato";
     background-image: url("../images/9.jpg");
-    // height: 150px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5%;
@@ -31,13 +30,13 @@ $color1:#135;
         }
         p{
             font-family: $fontFamily1;
-            font-size: 30px;
+            font-size: $pFontSize2;
             color:  $color1;
             margin: 0px;
         }
         .count{
             font-family: $fontFamily1;
-            font-size: 35px;
+            font-size: $countFontSize;
             color:  $color1;
         }
     }

@@ -3,10 +3,12 @@
 .tours{
     padding: 20px;
     text-align: center;
+    h1{
+        font-size: $h1FontSize;
+    }
     .packages{
 
         @import "carousel.scss";
-
         .trip{
 
             .tripDetail{
@@ -16,12 +18,18 @@
                 img{
                     width: 100%;
                     height: 180px;
+                    margin-bottom: 5px;
                 }
-
                 label{
-
+                    width: 100%;
+                    font-size: $h4FontSize;
+                    text-align: center;
+                    text-decoration: underline;
                 }
-
+                summary{
+                    font-size: $pFontSize;
+                    padding: 1%;
+                }
                 .readMore{
                     color: green;
                 }

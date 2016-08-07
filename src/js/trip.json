@@ -1,25 +1,25 @@
 {
     "topBanners":[
         {
-            "capHead":"",
-            "caption":"",
+            "capHead":"banner1",
+            "caption":"banner content1",
             "url":"src/images/4.jpg"
         },
         {
-            "capHead":"",
-            "caption":"",
+            "capHead":"banner2",
+            "caption":"banner content2",
             "url":"src/images/2.jpg"
         },
         {
-            "capHead":"",
-            "caption":"",
+            "capHead":"banner3",
+            "caption":"banner content3",
             "url":"src/images/3.jpg"
         }
 
     ],
     "aboutUs":{
-        "h1":"Welcome",
-        "h2":"About Five100miles.com",
+        "h1":"About Five100miles.com",
+        "h2":"Welcome",
         "h3":"",
         "p":"Crafted with passion and creativity, Five100Miles is customized by industry’s best professionals to creating the best packages of the industry and have people lived and breathed through these tours. We believe in creating unique and unforgettable experiences and share indelible memories with you."
     },
@@ -27,15 +27,12 @@
         {
             "tripName":"tour1",
             "tripTime":"5 days",
-            "tripLocs":["Leh",""],
-            "tripSummary":"",
-            "tripDes":"",
-            "tripGuide":"",
+            "tripLocs":["Leh","Yamuna","Himalaya"],
+            "tripSummary":"Dandi March",
+            "tripDes":"<p>Description of Trip here. qwertyuiopldsafbdnsagfdsabhfds afdsal fhdj sajfkdhskjahfjkdhsajkf hdjklsahfljk dshajfkhd sjkahfkdjsha kfjhdskjahfkjdhskjahfkjdhsakjhfjkdshajkfhjkdsah</p>",
+            "tripGuide":"Mahatma Gandhi",
             "tripPoster":"src/images/1.jpg",
-            "tripImages":[
-		"src/images/1.jpg",
-		"src/images/2.jpg"
-		]
+            "tripImages":["src/images/1.jpg","src/images/2.jpg","src/images/3.jpg"]
         },
         {
             "tripName":"tour2",
@@ -84,7 +81,7 @@
         },
         {
             "userName":"Arijit Ghoshal",
-            "userImg":"src/images/9.jpg",
+            "userImg":"src/images/5.jpg",
             "userReview":"Great way to find the adventures that the world has to offer.",
             "userTrip":"Himalaya Trip",
             "userRating":"5"
@@ -97,7 +94,27 @@
             "userRating":"5"
         }
     ],
-    "galleryData":"",
+    "galleryData":[{
+            "tripName":"Leh",
+            "tripPoster":"src/images/1.jpg",
+            "tripPics":["src/images/1.jpg","src/images/2.jpg","src/images/3.jpg"]
+        },
+        {
+            "tripName":"Himalaya",
+            "tripPoster":"src/images/2.jpg",
+            "tripPics":[{},{},{},{}]
+        },
+        {
+            "tripName":"Himalaya",
+            "tripPoster":"src/images/3.jpg",
+            "tripPics":[{},{},{},{}]
+        },
+        {
+            "tripName":"Sikim",
+            "tripPoster":"src/images/4.jpg",
+            "tripPics":[{},{},{},{}]
+        }
+    ],
     "contactDetails":{
         "mobile":"99999 99999",
         "email":"examplemail@example.com",

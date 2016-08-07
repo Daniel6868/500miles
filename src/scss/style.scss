@@ -6,11 +6,9 @@
 }
 
 .wrapper{
-    // border: 1px solid red;
     font-family: $fontFamily1, $fontFamily2, $fontFamily3;
 
     @import "header.scss";
-
     @import "topBanner.scss";
     @import "aboutus.scss";
     @import "countArea";
@@ -21,3 +19,6 @@
     @import "footer.scss";
 
 }
+
+@import "tripDetails.scss";
+@import "gallerydetails.scss";

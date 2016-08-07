@@ -8,17 +8,27 @@ $color1: #12A;
     background-image: url("../images/8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5%;
-    background-position-y: -235px;
+    padding: 2%;
+    // background-position-y: -235px;
+    text-align: center;
     color: #fff;
+
+    h1{
+        font-size: $h1FontSize;
+        color: #333;
+        text-shadow: 1px 1px #FFF;
+        text-align: center;
+    }
 
     .ownAddress{
         padding: 20px;
         text-align: center;
+        background-color: rgba(0, 0, 0, 0.59);
+        opacity: 0.8;
         font-size: 20px;
     }
     .socialLinks{
-        padding: 20px;
+        padding: 10px;
         text-align: center;
 
         .connections{

@@ -4,25 +4,20 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>500miles.com</title>
+        <title>500miles.org.in</title>
 
-        <link rel="stylesheet" href="src/lib/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+        <!-- <link rel="stylesheet" href="src/lib/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="src/lib/animate.css/animate.min.css" media="screen" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="src/lib/slider/slideshow.css" media="screen" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="src/lib/owl-carousel/assets/css/owl.carousel.css" media="screen" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="src/lib/owl-carousel/assets/css/owl.theme.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="src/lib/owl-carousel/owl-carousel/owl.carousel.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="src/lib/owl-carousel/owl-carousel/owl.theme.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="src/lib/lato/css/lato.min.css" media="screen" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="src/lib/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="src/lib/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8"> -->
 
-        <!-- <link rel="stylesheet" href="src/css/lib.css" media="screen" title="no title" charset="utf-8"> -->
+        <link rel="stylesheet" href="src/css/lib.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="src/css/style.css" media="screen" title="no title" charset="utf-8">
 
-        <script type="text/javascript" src="src/lib/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="src/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="src/lib/slider/slideshow.js"></script>
-        <script type="text/javascript" src="src/lib/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
-        <!-- <script type="text/javascript" src="src/js/lib.js"></script> -->
-        <script type="text/javascript" src="src/js/main.js"></script>
+        <script type="text/javascript" src="src/js/lib.js"></script>
+        <script type="text/javascript" src="src/js/main.min.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -37,7 +32,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand bounce" href='http://wwww.five100miles.com'>Five100Miles.com</a>
+                            <a class="navbar-brand bounce" href='http://wwww.five100miles.org.in/'>Five100Miles.org.in</a>
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav pull-right">
@@ -53,53 +48,9 @@
             </header>
 
             <section class="">
-                <div id='topBanner' class="topBanner">
-                    <div id="mainBanner" class="slideshow">
-            			<div class="wrapper">
-            				<div class="slides">
-            					<div class="slide">
-            						<figure>
-            							<img src="src/images/4.jpg" />
-                                        <div class="container">
-                                            <figcaption>
-                                                <h3>Test1</h3>
-                                                <p></p>
-                                            </figcaption>
-                                        </div>
-            						</figure>
-            					</div>
-            					<div class="slide">
-            						<figure>
-            							<img src="src/images/2.jpg" />
-                                        <div class="container">
-            		                        <figcaption>
-                                                <h3>Test1</h3>
-                                                <p>
-                                                    Test
-                                                </p>
-                                            </figcaption>
-                                        </div>
-            						</figure>
-            					</div>
-                                <div class="slide">
-                                    <figure>
-                                        <img src="src/images/3.jpg" />
-                                        <div class="container">
-                                            <figcaption>
-                                                <h3>Test1</h3>
-                                                <p>
-                                                    Test
-                                                </p>
-                                            </figcaption>
-                                        </div>
-                                    </figure>
-                                </div>
-            				</div>
-            			</div>
-            		</div>
-                </div>
+                <div id='topBanner' class="topBanner owl-carousel"></div>
 
-                <div id='aboutus' class="aboutus container"><h2></h2><h1></h1><p></p></div>
+                <div id='aboutus' class="aboutus container"><h1></h1><h2></h2><p></p></div>
 
                 <div class="countArea">
                     <div class="row">
@@ -111,60 +62,27 @@
 
                 </div>
 
-                <div id='tours' class="tours"><h2>Our Tours and Treks:</h2><div class="packages rows"><div id="tourSlider" class="owl-carousel"></div></div></div>
+                <div id='tours' class="tours">
+                    <h1>Our Tours and Treks:</h1>
+                    <div class="packages rows">
+                        <div id="tourSlider" class="owl-carousel"></div>
+                    </div>
+                </div>
 
                 <div class="reviews ">
-                    <h2>Testimonials</h2>
+                    <h1>Testimonials</h1>
                     <div class="container reviewArea">
                         <div id="reviewSlider" class="owl-carousel"></div>
                     </div>
                 </div>
 
                 <div id='gallery' class="gallery">
-                    <h2>Our Gallery:</h2>
-                    <div class="photoSlide rows">
-                        <div id="photoSlide" class="owl-carousel">
-
-                            <div class="tripPics item" data-toggle="modal" data-target="#myModal">
-                                <div class="tripPicsDetail">
-                                    <img src="src/images/1.jpg" alt="" />
-                                    <label for="">Trip Name</label>
-                                    <summary>Date: </summary>
-                                </div>
-                            </div>
-                            <div class="tripPics item">
-                                <div class="tripPicsDetail">
-                                    <img src="src/images/2.jpg" alt="" />
-                                    <label for="">Trip Name: </label>
-                                    <summary>Date: </summary>
-                                </div>
-                            </div>
-                            <div class="tripPics item">
-                                <div class="tripPicsDetail">
-                                    <img src="src/images/3.jpg" alt="" />
-                                    <label for="">Trip Name: </label>
-                                    <summary>Date: </summary>
-                                </div>
-                            </div>
-                            <div class="tripPics item">
-                                <div class="tripPicsDetail">
-                                    <img src="src/images/4.jpg" alt="" />
-                                    <label for="">Trip Name: </label>
-                                    <summary>Date: </summary>
-                                </div>
-                            </div>
-                            <div class="tripPics item">
-                                <div class="tripPicsDetail">
-                                    <img src="src/images/5.jpg" alt="" />
-                                    <label for="">Trip Name: </label>
-                                    <summary>Date: </summary>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h1>Our Gallery:</h1>
+                    <div class="photoSlide rows"><div id="photoSlide" class="owl-carousel"></div></div>
                 </div>
 
                 <div id='contactus' class="contactus ">
+                    <h1>Connect With Us</h1>
                     <div class="ownAddress row">
                         <div class="mobile col-md-4"></div>
                         <div class="email col-md-4"></div>
@@ -175,8 +93,8 @@
                             <li><a href='http://www.facebook.com/'><i class="fa fa-facebook fb"></i></a></li>
                             <li><a href='https://plus.google.com/'><i class="fa fa-google-plus gp"></i></a></li>
                             <li><a href='http://twitter.com/'><i class="fa fa-twitter tw"></i></a></li>
-                            <li><a href='http://pinterest.com/'><i class="fa fa-pinterest pt"></i></a></li>
-                            <li><a href='http://youtube.com/'><i class="fa fa-youtube yt"></i></a></li>
+                            <!-- <li><a href='http://pinterest.com/'><i class="fa fa-pinterest pt"></i></a></li>
+                            <li><a href='http://youtube.com/'><i class="fa fa-youtube yt"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
