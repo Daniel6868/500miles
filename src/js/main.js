@@ -16,6 +16,7 @@ var Five100miles = {
     init: function(data){
         var webData = data,
             topBannersData = webData.topBanners,
+            homePageData = webData.homePage,
             aboutUsData = webData.aboutUs,
             tripsData = webData.trips,
             countData = webData.countData,
@@ -24,7 +25,8 @@ var Five100miles = {
             contactData = webData.contactDetails
             ;
         Five100miles.topBanners(topBannersData);
-        Five100miles.aboutUs(aboutUsData);
+        Five100miles.homePage(homePageData);
+        Five100miles.aboutUsPage(aboutUsData);
         Five100miles.tours(tripsData);
         Five100miles.countData(countData);
         Five100miles.reviews(reviewData);
@@ -32,11 +34,17 @@ var Five100miles = {
         Five100miles.contactus(contactData);
         Five100miles.bind();
     },
-    aboutUs: function(data){
+    homePage: function(data){
+        $('.home>h1').html(data.h1);
+        $('.home>h2').html(data.h2);
+        $('.home>h3').html(data.h3);
+        $('.home>p').html(data.p);
+    },
+    aboutUsPage: function(data){
         $('.aboutus>h1').html(data.h1);
         $('.aboutus>h2').html(data.h2);
         $('.aboutus>h3').html(data.h3);
-        $('.aboutus>p').html(data.p);
+        $('.aboutus>div').html(data.content);
     },
     topBanners: function(data){
         var banners = data, slides = '';
@@ -95,7 +103,7 @@ var Five100miles = {
             tourDetails += "<div class='tourDesc'><h4>Description:</h4>"+trips[tourId].tripDes+"</div>";
             tourDetails += "<div class='rows'><div class='tourTime col-md6'><h4>Total time taken: "+trips[tourId].tripTime+"</h4></div>";
             tourDetails += "<div class='tourGuide col-md6'><h4>Your Guide: "+trips[tourId].tripGuide+"</h4></div></div>";
-            tourDetails += "<a href='#contactus'><h4>Contact Details</h4></div>";
+            tourDetails += "<h4>To know more details: <a href="+trips[tourId].tripUrl+">Click here</></h4></div>";
             tourDetails += "</div>";
 
             $('.modal-title').html(trips[tourId].tripName);
@@ -157,9 +165,9 @@ var Five100miles = {
         });
     },
     contactus: function(data){
-        $('.contactus > .ownAddress > .mobile').html("<i class='fa fa-mobile'></i> | +"+data.mobile);
-        $('.contactus > .ownAddress > .email').html("<i class='fa fa-envelope-o'></i> | "+data.email);
-        $('.contactus > .ownAddress > .address').html("<i class='fa fa-location-arrow'></i> | "+data.address);
+        $('.contactus > .ownAddress > .row > .mobile').html("<i class='fa fa-mobile'></i> | +"+data.mobile);
+        $('.contactus > .ownAddress > .row > .email').html("<i class='fa fa-envelope-o'></i> | "+data.email);
+        $('.contactus > .ownAddress > .row > .address').html("<i class='fa fa-location-arrow'></i> | "+data.address);
     },
     bind:function(){
         // $('.close').off().on('click', function(){

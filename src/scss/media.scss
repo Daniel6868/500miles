@@ -1,0 +1,19 @@
+@import "var.scss";
+
+@media only screen and (min-width: 340px) and (max-width: 650px) {
+    .wrapper{
+
+        .header{
+            color: red;
+            .navbar{
+                width: 90%;
+
+            }
+        }
+    }
+}
+@media only screen and (min-width: 340px) and (max-width: 650px) and (orientation: landscape) {
+    .navbar{
+        width: 90%;
+    }
+}
