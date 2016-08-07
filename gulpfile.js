@@ -13,11 +13,6 @@ var gulp    = require('gulp'),
 gulp.task('getSRC', function(){
     gulp.src('bower_components/**/*.min.js').pipe(gulp.dest('src/lib/'));
     gulp.src('bower_components/**/*.css').pipe(gulp.dest('src/lib/'));
-    // gulp.src([
-    //     'bower_components/lato/font/*.{ttf,woff,woff2,eof,svg}',
-    //     'bower_components/font-awesome/fonts/*.{ttf,woff,woff2,eof,svg}',
-    //     'bower_components/bootstrap/fonts/*.{ttf,woff,woff2,eof,svg}'
-    // ]).pipe(gulp.dest('src/fonts/'));
     gulp.src('bower_components/**/*.{ttf,woff,woff2,eof,svg}').pipe(gulp.dest('src/lib/'));
 
 });
@@ -34,7 +29,7 @@ gulp.task('minscripts', function(){
 
 //For Scripts
 gulp.task('scripts', function(){
-    gulp.src('src/js/main.js').pipe(rename({suffix: '.min'})).pipe(gulp.dest('src/js/'));
+    gulp.src('src/js/main.js').pipe(uglify()).pipe(rename({suffix: '.min'})).pipe(gulp.dest('src/js/'));
 });
 
 //For min-styles
@@ -59,6 +54,7 @@ gulp.task('styles', function(){
         .pipe(sourcemaps.init())
         // .pipe(sass())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(autoprefixer())
         // .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('src/css/'));
 });
@@ -70,7 +66,6 @@ gulp.task('fonts', function(){
     gulp.src('src/lib/lato/font/**/*.{ttf,woff,woff2,eof,svg}').pipe(gulp.dest('src/font/'));
 });
 
-// --------------------------------------------------------------------
 //For Watch Task
 gulp.task('watch', function(){
     gulp.watch('src/scss/**/*.scss',['styles']);
@@ -79,10 +74,10 @@ gulp.task('watch', function(){
 
 });
 
-// --------------------------------------------------------------------
 //For Build
 gulp.task('buildJS', function(){
     gulp.src(['src/js/lib.js','src/js/main.min.js']).pipe(gulp.dest('build/js/'));
+    gulp.src('src/js/trip.json').pipe(gulp.dest('build/js/'));
 });
 gulp.task('buildCSS', function(){
     gulp.src(['src/css/lib.css','src/css/style.css']).pipe(gulp.dest('build/css/'));
@@ -92,20 +87,9 @@ gulp.task('buildFont', function(){
     gulp.src('src/font/**/*.{ttf,woff,woff2,eof,svg}').pipe(gulp.dest('build/font/'));
 });
 gulp.task('buildImages', function(){
-    gulp.src('src/fonts/**/*.{ttf,woff,woff2,eof,svg}').pipe(gulp.dest('build/font/'));
+    gulp.src('src/images/**/*').pipe(gulp.dest('build/images/'));
 });
 gulp.task('build',['buildJS','buildCSS','buildFont','buildImages']);
 
-
-
-
 //For Default Task
-gulp.task('default', [
-    'getSRC',
-    'minstyles',
-    'minscripts',
-    'fonts',
-    'styles',
-    'scripts',
-    'watch'
-]);
+gulp.task('default', ['getSRC','minstyles','minscripts','fonts','styles','scripts','watch','build']);
