@@ -55,7 +55,7 @@ var Five100miles = {
             slides += '</figure></div>';
         }
         // console.log(slides);
-        $('.topBanner').html(slides).owlCarousel({
+        $('#topBanner').html(slides).owlCarousel({
             navigation : false,
             autoPlay: true,
             responsive: true,
@@ -109,6 +109,10 @@ var Five100miles = {
             $('.modal-title').html(trips[tourId].tripName);
             $('.modal-body').html(tourDetails);
         });
+
+        $()
+
+        $('.tourPage');
     },
     reviews: function(data){
         var reviewData = data, reviews = '';
