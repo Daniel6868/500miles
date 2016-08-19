@@ -1,19 +1,131 @@
 @import "var.scss";
 
-@media only screen and (min-width: 340px) and (max-width: 650px) {
+@media only screen and (max-device-width: 340px) and (orientation: portrait) {
     .wrapper{
-
         .header{
-            color: red;
             .navbar{
+                // border: 1px solid red;
                 width: 90%;
-
+                .container-fluid{
+                    .navbar-collapse{
+                        // border: 1px solid blue;
+                        background-color: rgba(0,0,0,0.2);
+                        ul{
+                            width: 100%;
+                            text-align: center;
+                            margin: 0px;
+                        }
+                    }
+                }
             }
         }
+        .topBanner .banner figure figcaption{
+            width: 90%;
+            padding: 1%;
+        }
+        .countArea .row{
+            .count {
+                font-family: "lato";
+                font-size: 20px;
+                color: #fff;
+                text-shadow: 3px 3px 30px #135;
+            }
+            p{
+               font-family: "lato";
+               font-size: 16px;
+               color: #fff;
+               // color: #135;
+               margin: 0px;
+            }
+        }
+        .reviews .reviewArea {
+            .item .left, .right{
+                display: block !important;
+                // border: 1px solid green;
+                width:95% !important;
+                margin: 0px auto;
+                text-align: center;
+                h3{
+                    width: 100%;
+                }
+                p{
+                    width: 100%;
+                }
+            }
+            .owl-theme .owl-controls .owl-page span{
+                background: #38E;
+            }
+        }
+        .contactus .ownAddress{
+            font-size: 18px;
+            width: 100%;
+        }
+
     }
 }
-@media only screen and (min-width: 340px) and (max-width: 650px) and (orientation: landscape) {
-    .navbar{
-        width: 90%;
+@media only screen and (max-device-width: 650px) and (orientation: landscape) {
+    .wrapper{
+        .header{
+            .navbar{
+                // border: 1px solid red;
+                width: 90%;
+                .container-fluid{
+                    .navbar-collapse{
+                        // border: 1px solid blue;
+                        background-color: rgba(0,0,0,0.2);
+                        ul{
+                            width: 100%;
+                            text-align: center;
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .topBanner .banner figure figcaption{
+            width: 90%;
+            padding: 1%;
+        }
+        .countArea .row{
+            .count {
+                font-family: "lato";
+                font-size: 20px;
+                color: #fff;
+                text-shadow: 3px 3px 30px #135;
+            }
+            p{
+               font-family: "lato";
+               font-size: 16px;
+               color: #fff;
+               // color: #135;
+               margin: 0px;
+            }
+        }
+        .reviews .reviewArea {
+            .item .left, .right{
+                display: block !important;
+                // border: 1px solid green;
+                width:95% !important;
+                margin: 0px auto;
+                text-align: center;
+                h3{
+                    width: 100%;
+                }
+                p{
+                    width: 100%;
+                }
+            }
+            .owl-theme .owl-controls .owl-page span{
+                background: #38E;
+            }
+        }
+        .contactus .ownAddress{
+            font-size: 18px;
+            width: 100%;
+        }
+
     }
 }
+// @media only screen and {
+//
+// }

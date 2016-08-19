@@ -20,9 +20,10 @@ gulp.task('getSRC', function(){
 //For min-scripts
 gulp.task('minscripts', function(){
     gulp.src([
-        'src/lib/jquery/dist/jquery.min.js',
-        'src/lib/bootstrap/dist/js/bootstrap.min.js',
-        'src/lib/owl-carousel/owl-carousel/owl.carousel.min.js'])
+            'src/lib/jquery/dist/jquery.min.js',
+            'src/lib/bootstrap/dist/js/bootstrap.min.js',
+            'src/lib/owl-carousel/owl-carousel/owl.carousel.min.js'
+        ])
         .pipe(concat('lib.js'))
         .pipe(gulp.dest('src/js/'));
 });
@@ -41,7 +42,7 @@ gulp.task('minstyles', function(){
         'src/lib/owl-carousel/owl-carousel/owl.theme.css',
         'src/lib/owl-carousel/owl-carousel/owl.transitions.css',
         'src/lib/lato/css/lato.min.css',
-        'src/lib/font-awesome/css/font-awesome.min.css',
+        'src/lib/font-awesome/css/font-awesome.min.css'
         ])
         .pipe(concat('lib.css'))
         .pipe(gulp.dest('src/css/'))
@@ -89,7 +90,7 @@ gulp.task('buildFont', function(){
 gulp.task('buildImages', function(){
     gulp.src('src/images/**/*').pipe(gulp.dest('build/images/'));
 });
-gulp.task('build',['buildJS','buildCSS','buildFont','buildImages']);
 
+gulp.task('build',['buildJS','buildCSS','buildFont','buildImages']);
 //For Default Task
 gulp.task('default', ['getSRC','minstyles','minscripts','fonts','styles','scripts','watch','build']);

@@ -61,7 +61,6 @@ var Five100miles = {
             responsive: true,
             mouseDrag:false,
             pagination: false,
-            responsive:true,
             items:1
         });
 
