@@ -1,0 +1,26 @@
+@import "var.scss";
+
+.home{
+    text-align: center;
+    padding: 4%;
+
+    h1{
+        font-size: $h1FontSize;
+    }
+    h2{
+        font-size: $h2FontSize;
+        // font-style: italic;
+        text-decoration: underline;
+    }
+    h3{
+        font-size: $h3FontSize;
+        // font-style: italic;
+        // text-decoration: underline;
+    }
+    p{
+        font-size: $pFontSize;
+        line-height: 1.7em;
+        text-align: left;
+
+    }
+}

@@ -1,0 +1,31 @@
+@import "var.scss";
+
+.aboutus{
+    text-align: center;
+    padding: 4%;
+
+    h1{
+        font-size: $h1FontSize;
+    }
+    h2{
+        font-size: $h2FontSize;
+        text-decoration: underline;
+    }
+    h3{
+        font-size: $h3FontSize;
+        text-decoration: underline;
+
+    }
+    div{
+        font-size: $pFontSize;
+        line-height: 1.7em;
+        text-align: left;
+
+        h3{
+            font-size: $h3FontSize;
+            text-decoration: underline;
+
+        }   
+
+    }
+}

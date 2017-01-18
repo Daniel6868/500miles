@@ -1,0 +1,45 @@
+@import "var.scss";
+
+$color1:#135;
+
+.countArea{
+    margin: 0px !important;
+    font-family: "lato";
+    background-image: url("../images/9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+
+    .row{
+        margin: 0px;
+        text-align: center;
+
+        .fa{
+            border: 3px solid #12A;
+            padding: 10px;
+            border-radius: 50%;
+            width: 70px;
+            color: $color1;
+            background-color: #fff;
+            font-size: 36px;
+            margin: 0px 10px;
+            &:hover{
+                border: 3px solid $color1;
+                color: $color1;
+            }
+        }
+        p{
+            font-family: $fontFamily1;
+            font-size: $pFontSize2;
+            color:  $color1;
+            margin: 0px;
+        }
+        .count{
+            font-family: $fontFamily1;
+            font-size: $countFontSize;
+            color:  $color1;
+        }
+    }
+
+
+}

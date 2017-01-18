@@ -1,0 +1,52 @@
+@import "var.scss";
+
+.tourDetails{
+
+    .tourPoster{
+        margin-bottom:5px ;
+        img{
+            width: 100%;
+        }
+    }
+    .tourPlaces{
+        font-style: italic;
+        font-weight: bold;
+        font-size: $h4FontSize;
+    }
+    hr{
+        padding: 0px;
+        margin: 5px 0px;
+        font-size: 5px;
+        border: 1px solid;
+    }
+    .tourDesc{
+        h4{
+            font-size: $h4FontSize;
+        }
+        p{
+            padding: 0px 0px 0px 25px;
+        }
+
+    }
+    .tourTime{
+        h4{
+            font-size: $h4FontSize;
+        }
+        p{
+            padding: 0px 0px 0px 25px;
+        }
+    }
+    .tourGuide{
+        h4{
+            font-size: $h4FontSize;
+        }
+        p{
+            padding: 0px 0px 0px 25px;
+        }
+    }
+    a{
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+    }
+}

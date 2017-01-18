@@ -1,0 +1,21 @@
+@import "var.scss";
+
+$color1: #fff;
+
+.footer{
+    background-color: #0C1400;
+    color: #fff;
+    font-family: $fontFamily1;
+    text-align: center;
+    // padding: 20px;
+    // height: 150px;
+
+    .copyright{
+        padding: 10px;
+        margin: 10px;
+
+        a{
+            color: purple;
+        }
+    }
+}
